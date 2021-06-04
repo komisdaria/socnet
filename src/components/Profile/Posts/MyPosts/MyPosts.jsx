@@ -3,17 +3,11 @@ import React from 'react';
 import OnePost from '../Post/Post';
 import styles from './MyPosts.module.css';
 
-const postsData = [
-  { id: '1',  message: 'my First post', likesCount: 7},
-  { id: '2',  message: 'today is good day', likesCount: 13},
-  { id: '3',  message: 'only rise and sunshine', likesCount: 3},
-  { id: '4',  message: 'going to the gym', likesCount: 18 },
-  { id: '5',  message: 'o this is my story', likesCount: 37},
-]
 
-let postsEl = postsData.map((post) => <OnePost message={post.message} likesCount={post.likesCount} />);
 
 const MyPosts = (props) => {
+  
+  let postsEl = props.posts.map((post) => <OnePost message={post.message} likesCount={post.likesCount} />);
 
   return (
     <div className={styles.postsBlock}>
