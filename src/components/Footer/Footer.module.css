@@ -1,0 +1,6 @@
+.footer {
+  grid-area: f;
+  background-color: #24305E;
+  color: antiquewhite;
+  height: 60px;
+}
