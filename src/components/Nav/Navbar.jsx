@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { NavCalendar } from './Calendar/Calendar';
 import styles from'./Navbar.module.css';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+  // const friends = props.state.friends.map((message) => <Friends friends={message.message} />);
+
   return (
     <nav className={styles.nav}>
     <div className={styles.item}>
